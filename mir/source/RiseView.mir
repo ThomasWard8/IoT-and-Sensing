@@ -1,0 +1,587 @@
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 1; ]
+using Toybox.WatchUi;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 2; ]
+using Toybox.Communications as :Comm;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 3; ]
+using Toybox.Sensor;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 5; ]
+using Toybox.System;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 6; ]
+using Toybox.Lang;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 7; ]
+using Toybox.Time.Gregorian;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 8; ]
+using Toybox.Sensor;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 9; ]
+using Toybox.Application;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 10; ]
+using Toybox.Timer;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 12; ]
+class RiseView extends WatchUi.View{
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 12; ]
+    <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 13 8 ]
+        %tmp.3 = getm $.Toybox.Timer;
+        %tmp.4 = getv function ? %tmp.3 :Timer;
+        %tmp.1 = newc %tmp.4 ();
+        putv self :dataTimer %tmp.1;
+    }
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 12; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 13; @position = 8; ]
+    var dataTimer;
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 14; @position = 8; ]
+    var image;
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 16; @position = 8; ]
+    var url = "https://receivedata-nmx2zrouca-uc.a.run.app";
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 18; @position = 8; ]
+    var timer = 5000;
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 20; ]
+    function timerCallback() {
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 21 8 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_stop" ]
+        %sensorInfo.1 = local;
+        %tmp.1 = getm $.Toybox.Sensor;
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %sensorInfo.1 %tmp.3;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 22 8 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_stop" ]
+        %xAccel.2 = local;
+        %tmp.4 = 0;
+        lputv %xAccel.2 %tmp.4;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 23 8 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_stop" ]
+        %yAccel.3 = local;
+        %tmp.5 = 0;
+        lputv %yAccel.3 %tmp.5;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 24 8 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_stop" ]
+        %hR.4 = local;
+        %tmp.6 = 0;
+        lputv %hR.4 %tmp.6;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 25 8 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_stop" ]
+        %altitude.5 = local;
+        %tmp.7 = 0;
+        lputv %altitude.5 %tmp.7;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 26 8 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_stop" ]
+        %heading.6 = local;
+        %tmp.8 = 0;
+        lputv %heading.6 %tmp.8;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 27 8 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_stop" ]
+        %xMag.7 = local;
+        %tmp.9 = 0;
+        lputv %xMag.7 %tmp.9;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 28 8 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_stop" ]
+        %yMag.8 = local;
+        %tmp.10 = 0;
+        lputv %yMag.8 %tmp.10;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 29 8 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_stop" ]
+        %zMag.9 = local;
+        %tmp.11 = 0;
+        lputv %zMag.9 %tmp.11;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 30 8 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_stop" ]
+        %pressure.10 = local;
+        %tmp.12 = 0;
+        lputv %pressure.10 %tmp.12;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 31 8 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_stop" ]
+        %temp.11 = local;
+        %tmp.13 = 0;
+        lputv %temp.11 %tmp.13;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 32 8 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_stop" ]
+        %stress.12 = local;
+        %tmp.14 = 0;
+        lputv %stress.12 %tmp.14;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 36 8 ]
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_8_43_8_if_stmt:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_12_36_57_begin:
+        %tmp.16 = lgetv %sensorInfo.1;
+        %tmp.18 = const :accel;
+        %tmp.19 = canhazplz %tmp.16 %tmp.18;
+        bf %tmp.19 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_8_43_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_37_36_57_true:
+        %tmp.20 = lgetv %sensorInfo.1;
+        %tmp.21 = as %tmp.20 { (interface { var accel; }) };
+        %tmp.22 = getv %tmp.21 :accel;
+        %tmp.23 = null;
+        %tmp.24 = ne %tmp.22 %tmp.23;
+        push %tmp.24;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_37_36_57_end:
+        %tmp.25 = phi [%tmp.19 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_12_36_57_begin] [%tmp.24 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_37_36_57_true] [%tmp.25 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_37_36_57_end];
+        bf %tmp.25 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_8_43_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_8_43_8_if_true:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_63_40_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 37 12 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_63_40_8_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_63_40_8_stop" ]
+        %accel.13 = local;
+        %tmp.26 = lgetv %sensorInfo.1;
+        %tmp.27 = as %tmp.26 { (interface { var accel; }) };
+        %tmp.28 = getv %tmp.27 :accel;
+        lputv %accel.13 %tmp.28;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 38 12 ]
+        %tmp.30 = lgetv %accel.13;
+        %tmp.31 = 0;
+        %tmp.32 = agetv %tmp.30 %tmp.31;
+        lputv %xAccel.2 %tmp.32;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 39 12 ]
+        %tmp.34 = lgetv %accel.13;
+        %tmp.35 = 1;
+        %tmp.36 = agetv %tmp.34 %tmp.35;
+        lputv %yAccel.3 %tmp.36;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_63_40_8_stop:
+        goto @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_8_43_8_if_end;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_8_43_8_if_false:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_40_15_43_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 41 12 ]
+        %tmp.37 = 0;
+        lputv %xAccel.2 %tmp.37;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 42 12 ]
+        %tmp.38 = 0;
+        lputv %yAccel.3 %tmp.38;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_40_15_43_8_stop:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_36_8_43_8_if_end:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 45 8 ]
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_45_8_49_8_if_stmt:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_45_12_45_65_begin:
+        %tmp.40 = lgetv %sensorInfo.1;
+        %tmp.42 = const :heartRate;
+        %tmp.43 = canhazplz %tmp.40 %tmp.42;
+        bf %tmp.43 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_45_8_49_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_45_41_45_65_true:
+        %tmp.44 = lgetv %sensorInfo.1;
+        %tmp.45 = as %tmp.44 { (interface { var heartRate; }) };
+        %tmp.46 = getv %tmp.45 :heartRate;
+        %tmp.47 = null;
+        %tmp.48 = ne %tmp.46 %tmp.47;
+        push %tmp.48;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_45_41_45_65_end:
+        %tmp.49 = phi [%tmp.43 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_45_12_45_65_begin] [%tmp.48 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_45_41_45_65_true] [%tmp.49 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_45_41_45_65_end];
+        bf %tmp.49 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_45_8_49_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_45_8_49_8_if_true:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_45_71_47_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 46 12 ]
+        %tmp.50 = lgetv %sensorInfo.1;
+        %tmp.51 = as %tmp.50 { (interface { var heartRate; }) };
+        %tmp.52 = getv %tmp.51 :heartRate;
+        lputv %hR.4 %tmp.52;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_45_71_47_8_stop:
+        goto @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_45_8_49_8_if_end;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_45_8_49_8_if_false:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_47_15_49_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 48 12 ]
+        %tmp.53 = 0;
+        lputv %hR.4 %tmp.53;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_47_15_49_8_stop:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_45_8_49_8_if_end:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 51 8 ]
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_51_8_55_8_if_stmt:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_51_12_51_63_begin:
+        %tmp.55 = lgetv %sensorInfo.1;
+        %tmp.57 = const :altitude;
+        %tmp.58 = canhazplz %tmp.55 %tmp.57;
+        bf %tmp.58 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_51_8_55_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_51_40_51_63_true:
+        %tmp.59 = lgetv %sensorInfo.1;
+        %tmp.60 = as %tmp.59 { (interface { var altitude; }) };
+        %tmp.61 = getv %tmp.60 :altitude;
+        %tmp.62 = null;
+        %tmp.63 = ne %tmp.61 %tmp.62;
+        push %tmp.63;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_51_40_51_63_end:
+        %tmp.64 = phi [%tmp.58 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_51_12_51_63_begin] [%tmp.63 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_51_40_51_63_true] [%tmp.64 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_51_40_51_63_end];
+        bf %tmp.64 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_51_8_55_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_51_8_55_8_if_true:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_51_69_53_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 52 12 ]
+        %tmp.65 = lgetv %sensorInfo.1;
+        %tmp.66 = as %tmp.65 { (interface { var altitude; }) };
+        %tmp.67 = getv %tmp.66 :altitude;
+        lputv %altitude.5 %tmp.67;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_51_69_53_8_stop:
+        goto @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_51_8_55_8_if_end;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_51_8_55_8_if_false:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_53_15_55_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 54 12 ]
+        %tmp.68 = 0;
+        lputv %altitude.5 %tmp.68;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_53_15_55_8_stop:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_51_8_55_8_if_end:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 57 8 ]
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_57_8_61_8_if_stmt:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_57_12_57_61_begin:
+        %tmp.70 = lgetv %sensorInfo.1;
+        %tmp.72 = const :heading;
+        %tmp.73 = canhazplz %tmp.70 %tmp.72;
+        bf %tmp.73 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_57_8_61_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_57_39_57_61_true:
+        %tmp.74 = lgetv %sensorInfo.1;
+        %tmp.75 = as %tmp.74 { (interface { var heading; }) };
+        %tmp.76 = getv %tmp.75 :heading;
+        %tmp.77 = null;
+        %tmp.78 = ne %tmp.76 %tmp.77;
+        push %tmp.78;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_57_39_57_61_end:
+        %tmp.79 = phi [%tmp.73 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_57_12_57_61_begin] [%tmp.78 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_57_39_57_61_true] [%tmp.79 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_57_39_57_61_end];
+        bf %tmp.79 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_57_8_61_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_57_8_61_8_if_true:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_57_67_59_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 58 12 ]
+        %tmp.80 = lgetv %sensorInfo.1;
+        %tmp.81 = as %tmp.80 { (interface { var heading; }) };
+        %tmp.82 = getv %tmp.81 :heading;
+        lputv %heading.6 %tmp.82;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_57_67_59_8_stop:
+        goto @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_57_8_61_8_if_end;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_57_8_61_8_if_false:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_59_15_61_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 60 12 ]
+        %tmp.83 = 0;
+        lputv %heading.6 %tmp.83;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_59_15_61_8_stop:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_57_8_61_8_if_end:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 63 8 ]
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_8_72_8_if_stmt:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_12_63_53_begin:
+        %tmp.85 = lgetv %sensorInfo.1;
+        %tmp.87 = const :mag;
+        %tmp.88 = canhazplz %tmp.85 %tmp.87;
+        bf %tmp.88 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_8_72_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_35_63_53_true:
+        %tmp.89 = lgetv %sensorInfo.1;
+        %tmp.90 = as %tmp.89 { (interface { var mag; }) };
+        %tmp.91 = getv %tmp.90 :mag;
+        %tmp.92 = null;
+        %tmp.93 = ne %tmp.91 %tmp.92;
+        push %tmp.93;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_35_63_53_end:
+        %tmp.94 = phi [%tmp.88 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_12_63_53_begin] [%tmp.93 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_35_63_53_true] [%tmp.94 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_35_63_53_end];
+        bf %tmp.94 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_8_72_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_8_72_8_if_true:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_59_68_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 64 12 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_59_68_8_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_59_68_8_stop" ]
+        %mag.14 = local;
+        %tmp.95 = lgetv %sensorInfo.1;
+        %tmp.96 = as %tmp.95 { (interface { var mag; }) };
+        %tmp.97 = getv %tmp.96 :mag;
+        lputv %mag.14 %tmp.97;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 65 12 ]
+        %tmp.99 = lgetv %mag.14;
+        %tmp.100 = 0;
+        %tmp.101 = agetv %tmp.99 %tmp.100;
+        lputv %xMag.7 %tmp.101;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 66 12 ]
+        %tmp.103 = lgetv %mag.14;
+        %tmp.104 = 1;
+        %tmp.105 = agetv %tmp.103 %tmp.104;
+        lputv %yMag.8 %tmp.105;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 67 12 ]
+        %tmp.107 = lgetv %mag.14;
+        %tmp.108 = 2;
+        %tmp.109 = agetv %tmp.107 %tmp.108;
+        lputv %zMag.9 %tmp.109;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_59_68_8_stop:
+        goto @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_8_72_8_if_end;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_8_72_8_if_false:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_68_15_72_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 69 12 ]
+        %tmp.110 = 0;
+        lputv %xMag.7 %tmp.110;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 70 12 ]
+        %tmp.111 = 1;
+        lputv %yMag.8 %tmp.111;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 71 12 ]
+        %tmp.112 = 2;
+        lputv %zMag.9 %tmp.112;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_68_15_72_8_stop:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_63_8_72_8_if_end:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 74 8 ]
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_74_8_78_8_if_stmt:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_74_12_74_63_begin:
+        %tmp.114 = lgetv %sensorInfo.1;
+        %tmp.116 = const :pressure;
+        %tmp.117 = canhazplz %tmp.114 %tmp.116;
+        bf %tmp.117 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_74_8_78_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_74_40_74_63_true:
+        %tmp.118 = lgetv %sensorInfo.1;
+        %tmp.119 = as %tmp.118 { (interface { var pressure; }) };
+        %tmp.120 = getv %tmp.119 :pressure;
+        %tmp.121 = null;
+        %tmp.122 = ne %tmp.120 %tmp.121;
+        push %tmp.122;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_74_40_74_63_end:
+        %tmp.123 = phi [%tmp.117 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_74_12_74_63_begin] [%tmp.122 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_74_40_74_63_true] [%tmp.123 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_74_40_74_63_end];
+        bf %tmp.123 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_74_8_78_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_74_8_78_8_if_true:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_74_69_76_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 75 12 ]
+        %tmp.124 = lgetv %sensorInfo.1;
+        %tmp.125 = as %tmp.124 { (interface { var pressure; }) };
+        %tmp.126 = getv %tmp.125 :pressure;
+        lputv %pressure.10 %tmp.126;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_74_69_76_8_stop:
+        goto @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_74_8_78_8_if_end;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_74_8_78_8_if_false:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_76_15_78_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 77 12 ]
+        %tmp.127 = 0;
+        lputv %pressure.10 %tmp.127;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_76_15_78_8_stop:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_74_8_78_8_if_end:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 80 8 ]
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_80_8_84_8_if_stmt:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_80_12_80_55_begin:
+        %tmp.129 = lgetv %sensorInfo.1;
+        %tmp.131 = const :temp;
+        %tmp.132 = canhazplz %tmp.129 %tmp.131;
+        bf %tmp.132 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_80_8_84_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_80_36_80_55_true:
+        %tmp.133 = lgetv %sensorInfo.1;
+        %tmp.134 = as %tmp.133 { (interface { var temp; }) };
+        %tmp.135 = getv %tmp.134 :temp;
+        %tmp.136 = null;
+        %tmp.137 = ne %tmp.135 %tmp.136;
+        push %tmp.137;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_80_36_80_55_end:
+        %tmp.138 = phi [%tmp.132 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_80_12_80_55_begin] [%tmp.137 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_80_36_80_55_true] [%tmp.138 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_80_36_80_55_end];
+        bf %tmp.138 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_80_8_84_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_80_8_84_8_if_true:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_80_61_82_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 81 12 ]
+        %tmp.139 = lgetv %sensorInfo.1;
+        %tmp.140 = as %tmp.139 { (interface { var temp; }) };
+        %tmp.141 = getv %tmp.140 :temp;
+        lputv %temp.11 %tmp.141;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_80_61_82_8_stop:
+        goto @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_80_8_84_8_if_end;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_80_8_84_8_if_false:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_82_15_84_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 83 12 ]
+        %tmp.142 = 0;
+        lputv %temp.11 %tmp.142;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_82_15_84_8_stop:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_80_8_84_8_if_end:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 86 8 ]
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_86_8_90_8_if_stmt:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_86_12_86_59_begin:
+        %tmp.144 = lgetv %sensorInfo.1;
+        %tmp.146 = const :stress;
+        %tmp.147 = canhazplz %tmp.144 %tmp.146;
+        bf %tmp.147 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_86_8_90_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_86_38_86_59_true:
+        %tmp.148 = lgetv %sensorInfo.1;
+        %tmp.149 = as %tmp.148 { (interface { var stress; }) };
+        %tmp.150 = getv %tmp.149 :stress;
+        %tmp.151 = null;
+        %tmp.152 = ne %tmp.150 %tmp.151;
+        push %tmp.152;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_86_38_86_59_end:
+        %tmp.153 = phi [%tmp.147 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_86_12_86_59_begin] [%tmp.152 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_86_38_86_59_true] [%tmp.153 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_86_38_86_59_end];
+        bf %tmp.153 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_86_8_90_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_86_8_90_8_if_true:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_86_65_88_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 87 12 ]
+        %tmp.154 = lgetv %sensorInfo.1;
+        %tmp.155 = as %tmp.154 { (interface { var stress; }) };
+        %tmp.156 = getv %tmp.155 :stress;
+        lputv %stress.12 %tmp.156;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_86_65_88_8_stop:
+        goto @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_86_8_90_8_if_end;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_86_8_90_8_if_false:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_88_15_90_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 89 12 ]
+        %tmp.157 = 0;
+        lputv %stress.12 %tmp.157;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_88_15_90_8_stop:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_86_8_90_8_if_end:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 93 8 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_stop" ]
+        %params.15 = local;
+        %tmp.158 = newd 11;
+        %tmp.159 = "heartRate";
+        %tmp.160 = lgetv %hR.4;
+        %tmp.161 = getv function %tmp.160 :toNumber;
+        %tmp.162 = invoke %tmp.160 %tmp.161();
+        %tmp.163 = dup %tmp.158;
+        %tmp.164 = aputv %tmp.163 %tmp.159 %tmp.162;
+        %tmp.165 = "xAccel";
+        %tmp.166 = lgetv %xAccel.2;
+        %tmp.167 = getv function %tmp.166 :toNumber;
+        %tmp.168 = invoke %tmp.166 %tmp.167();
+        %tmp.169 = dup %tmp.164;
+        %tmp.170 = aputv %tmp.169 %tmp.165 %tmp.168;
+        %tmp.171 = "yAccel";
+        %tmp.172 = lgetv %yAccel.3;
+        %tmp.173 = getv function %tmp.172 :toNumber;
+        %tmp.174 = invoke %tmp.172 %tmp.173();
+        %tmp.175 = dup %tmp.170;
+        %tmp.176 = aputv %tmp.175 %tmp.171 %tmp.174;
+        %tmp.177 = "altitude";
+        %tmp.178 = lgetv %altitude.5;
+        %tmp.179 = getv function %tmp.178 :toFloat;
+        %tmp.180 = invoke %tmp.178 %tmp.179();
+        %tmp.181 = dup %tmp.176;
+        %tmp.182 = aputv %tmp.181 %tmp.177 %tmp.180;
+        %tmp.183 = "heading";
+        %tmp.184 = lgetv %heading.6;
+        %tmp.185 = getv function %tmp.184 :toFloat;
+        %tmp.186 = invoke %tmp.184 %tmp.185();
+        %tmp.187 = dup %tmp.182;
+        %tmp.188 = aputv %tmp.187 %tmp.183 %tmp.186;
+        %tmp.189 = "xMag";
+        %tmp.190 = lgetv %xMag.7;
+        %tmp.191 = getv function %tmp.190 :toNumber;
+        %tmp.192 = invoke %tmp.190 %tmp.191();
+        %tmp.193 = dup %tmp.188;
+        %tmp.194 = aputv %tmp.193 %tmp.189 %tmp.192;
+        %tmp.195 = "yMag";
+        %tmp.196 = lgetv %yMag.8;
+        %tmp.197 = getv function %tmp.196 :toNumber;
+        %tmp.198 = invoke %tmp.196 %tmp.197();
+        %tmp.199 = dup %tmp.194;
+        %tmp.200 = aputv %tmp.199 %tmp.195 %tmp.198;
+        %tmp.201 = "zMag";
+        %tmp.202 = lgetv %zMag.9;
+        %tmp.203 = getv function %tmp.202 :toNumber;
+        %tmp.204 = invoke %tmp.202 %tmp.203();
+        %tmp.205 = dup %tmp.200;
+        %tmp.206 = aputv %tmp.205 %tmp.201 %tmp.204;
+        %tmp.207 = "pressure";
+        %tmp.208 = lgetv %pressure.10;
+        %tmp.209 = getv function %tmp.208 :toFloat;
+        %tmp.210 = invoke %tmp.208 %tmp.209();
+        %tmp.211 = dup %tmp.206;
+        %tmp.212 = aputv %tmp.211 %tmp.207 %tmp.210;
+        %tmp.213 = "temp";
+        %tmp.214 = lgetv %temp.11;
+        %tmp.215 = getv function %tmp.214 :toNumber;
+        %tmp.216 = invoke %tmp.214 %tmp.215();
+        %tmp.217 = dup %tmp.212;
+        %tmp.218 = aputv %tmp.217 %tmp.213 %tmp.216;
+        %tmp.219 = "stress";
+        %tmp.220 = lgetv %stress.12;
+        %tmp.221 = getv function %tmp.220 :toNumber;
+        %tmp.222 = invoke %tmp.220 %tmp.221();
+        %tmp.223 = dup %tmp.218;
+        %tmp.224 = aputv %tmp.223 %tmp.219 %tmp.222;
+        lputv %params.15 %tmp.224;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 106 8 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_stop" ]
+        %headers.16 = local;
+        %tmp.225 = newd 1;
+        %tmp.226 = "Content-Type";
+        %tmp.228 = getv ? :Communications;
+        %tmp.229 = getv %tmp.228 :REQUEST_CONTENT_TYPE_JSON;
+        %tmp.230 = dup %tmp.225;
+        %tmp.231 = aputv %tmp.230 %tmp.226 %tmp.229;
+        lputv %headers.16 %tmp.231;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 109 8 ]
+        [ "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_stop" ]
+        %options.17 = local;
+        %tmp.232 = newd 3;
+        %tmp.234 = const :headers;
+        %tmp.236 = lgetv %headers.16;
+        %tmp.237 = dup %tmp.232;
+        %tmp.238 = aputv %tmp.237 %tmp.234 %tmp.236;
+        %tmp.240 = const :method;
+        %tmp.242 = getv ? :Communications;
+        %tmp.243 = getv %tmp.242 :HTTP_REQUEST_METHOD_POST;
+        %tmp.244 = dup %tmp.238;
+        %tmp.245 = aputv %tmp.244 %tmp.240 %tmp.243;
+        %tmp.247 = const :responseType;
+        %tmp.249 = getv ? :Communications;
+        %tmp.250 = getv %tmp.249 :HTTP_RESPONSE_CONTENT_TYPE_JSON;
+        %tmp.251 = dup %tmp.245;
+        %tmp.252 = aputv %tmp.251 %tmp.247 %tmp.250;
+        lputv %options.17 %tmp.252;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 115 8 ]
+        %tmp.254 = getv ? :Communications;
+        %tmp.255 = getv function %tmp.254 :makeWebRequest;
+        %tmp.257 = getv ? :url;
+        %tmp.259 = lgetv %params.15;
+        %tmp.261 = lgetv %options.17;
+        %tmp.262 = self;
+        %tmp.263 = getv function %tmp.262 :method;
+        %tmp.265 = const :onReceive;
+        %tmp.266 = invoke %tmp.262 %tmp.263(%tmp.265);
+        invoke %tmp.254 %tmp.255(%tmp.257, %tmp.259, %tmp.261, %tmp.266);
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_20_29_116_4_stop:
+    }
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 118; ]
+    function onReceive(responseCode, data) {
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_118_43_124_4_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 119 8 ]
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_119_8_123_8_if_stmt:
+        %tmp.2 = lgetv %responseCode;
+        %tmp.3 = 200;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_119_8_123_8_if_false;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_119_8_123_8_if_true:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_119_33_121_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 120 12 ]
+        %tmp.5 = getm $.Toybox.System;
+        %tmp.6 = getv function %tmp.5 :println;
+        %tmp.7 = "Request Successful";
+        invoke %tmp.5 %tmp.6(%tmp.7);
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_119_33_121_8_stop:
+        goto @_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_119_8_123_8_if_end;
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_119_8_123_8_if_false:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_121_15_123_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 122 12 ]
+        %tmp.8 = getm $.Toybox.System;
+        %tmp.9 = getv function %tmp.8 :println;
+        %tmp.10 = "Response: ";
+        %tmp.12 = lgetv %responseCode;
+        %tmp.13 = add %tmp.10 %tmp.12;
+        invoke %tmp.8 %tmp.9(%tmp.13);
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_121_15_123_8_stop:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_119_8_123_8_if_end:
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_118_43_124_4_stop:
+    }
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 127; ]
+    function onLayout(dc) {
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_127_26_129_4_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 128 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :MainLayout;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_127_26_129_4_stop:
+    }
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 131; ]
+    function onShow() as Void {
+    }
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 134; ]
+    function onHide() as Void {
+    }
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 138; ]
+    function onUpdate(dc) {
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_138_26_140_4_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" 139 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :onUpdate;
+        %tmp.5 = lgetv %dc;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseView_mc_138_26_140_4_stop:
+    }
+}
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc"; @line = 1; ]
+<init> {
+}

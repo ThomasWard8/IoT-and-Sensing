@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="/Users/thomasward/Desktop/DE4/IoT/Rise/manifest.xml"/>
+<pcToLineNum>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseMenuDelegate.mc" id="2" lineNum="5" parent="globals/RiseMenuDelegate" pc="268435486" symbol="&lt;init&gt;"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435505" symbol="&lt;init&gt;"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseApp.mc" id="4" lineNum="5" parent="globals/RiseApp" pc="268435529" symbol="&lt;init&gt;"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseDelegate.mc" id="5" lineNum="4" parent="globals/RiseDelegate" pc="268435548" symbol="&lt;init&gt;"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="6" lineNum="12" parent="globals/RiseView" pc="268435567" symbol="&lt;init&gt;"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="6" lineNum="13" parent="globals/RiseView" pc="268435585" symbol="&lt;init&gt;"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseMenuDelegate.mc" id="7" lineNum="11" parent="globals/RiseMenuDelegate" pc="268435620" symbol="onMenuItem"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseMenuDelegate.mc" id="7" lineNum="12" parent="globals/RiseMenuDelegate" pc="268435622" symbol="onMenuItem"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseMenuDelegate.mc" id="7" lineNum="13" parent="globals/RiseMenuDelegate" pc="268435633" symbol="onMenuItem"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseMenuDelegate.mc" id="7" lineNum="14" parent="globals/RiseMenuDelegate" pc="268435657" symbol="onMenuItem"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseMenuDelegate.mc" id="7" lineNum="15" parent="globals/RiseMenuDelegate" pc="268435668" symbol="onMenuItem"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseMenuDelegate.mc" id="8" lineNum="7" parent="globals/RiseMenuDelegate" pc="268435693" symbol="initialize"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseMenuDelegate.mc" id="8" lineNum="8" parent="globals/RiseMenuDelegate" pc="268435695" symbol="initialize"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseApp.mc" id="9" lineNum="12" parent="globals/RiseApp" pc="268435714" symbol="onStart"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseApp.mc" id="10" lineNum="20" parent="globals/RiseApp" pc="268435717" symbol="getInitialView"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseApp.mc" id="10" lineNum="21" parent="globals/RiseApp" pc="268435719" symbol="getInitialView"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseApp.mc" id="11" lineNum="7" parent="globals/RiseApp" pc="268435794" symbol="initialize"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseApp.mc" id="11" lineNum="8" parent="globals/RiseApp" pc="268435796" symbol="initialize"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseApp.mc" id="12" lineNum="16" parent="globals/RiseApp" pc="268435815" symbol="onStop"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseDelegate.mc" id="13" lineNum="6" parent="globals/RiseDelegate" pc="268435818" symbol="initialize"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseDelegate.mc" id="13" lineNum="7" parent="globals/RiseDelegate" pc="268435820" symbol="initialize"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="15" lineNum="132" parent="globals/RiseView" pc="268435839" symbol="onLayout"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="15" lineNum="133" parent="globals/RiseView" pc="268435841" symbol="onLayout"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="16" lineNum="19" parent="globals/RiseView" pc="268435883" symbol="initialize"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="16" lineNum="20" parent="globals/RiseView" pc="268435885" symbol="initialize"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="16" lineNum="22" parent="globals/RiseView" pc="268435903" symbol="initialize"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="18" lineNum="123" parent="globals/RiseView" pc="268435948" symbol="onReceive"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="18" lineNum="124" parent="globals/RiseView" pc="268435950" symbol="onReceive"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="18" lineNum="125" parent="globals/RiseView" pc="268435961" symbol="onReceive"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="18" lineNum="127" parent="globals/RiseView" pc="268435985" symbol="onReceive"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="19" lineNum="143" parent="globals/RiseView" pc="268436010" symbol="onUpdate"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="19" lineNum="144" parent="globals/RiseView" pc="268436012" symbol="onUpdate"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="25" parent="globals/RiseView" pc="268436033" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="26" parent="globals/RiseView" pc="268436037" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="27" parent="globals/RiseView" pc="268436054" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="28" parent="globals/RiseView" pc="268436061" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="29" parent="globals/RiseView" pc="268436068" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="30" parent="globals/RiseView" pc="268436075" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="31" parent="globals/RiseView" pc="268436082" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="32" parent="globals/RiseView" pc="268436089" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="33" parent="globals/RiseView" pc="268436096" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="34" parent="globals/RiseView" pc="268436103" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="35" parent="globals/RiseView" pc="268436110" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="36" parent="globals/RiseView" pc="268436117" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="37" parent="globals/RiseView" pc="268436124" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="41" parent="globals/RiseView" pc="268436131" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="42" parent="globals/RiseView" pc="268436155" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="43" parent="globals/RiseView" pc="268436165" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="44" parent="globals/RiseView" pc="268436175" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="46" parent="globals/RiseView" pc="268436188" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="47" parent="globals/RiseView" pc="268436195" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="50" parent="globals/RiseView" pc="268436202" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="51" parent="globals/RiseView" pc="268436226" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="53" parent="globals/RiseView" pc="268436239" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="56" parent="globals/RiseView" pc="268436246" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="57" parent="globals/RiseView" pc="268436270" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="59" parent="globals/RiseView" pc="268436283" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="62" parent="globals/RiseView" pc="268436290" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="63" parent="globals/RiseView" pc="268436314" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="65" parent="globals/RiseView" pc="268436327" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="68" parent="globals/RiseView" pc="268436334" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="69" parent="globals/RiseView" pc="268436358" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="70" parent="globals/RiseView" pc="268436368" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="71" parent="globals/RiseView" pc="268436378" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="72" parent="globals/RiseView" pc="268436388" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="74" parent="globals/RiseView" pc="268436401" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="75" parent="globals/RiseView" pc="268436408" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="76" parent="globals/RiseView" pc="268436415" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="79" parent="globals/RiseView" pc="268436422" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="80" parent="globals/RiseView" pc="268436446" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="82" parent="globals/RiseView" pc="268436459" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="85" parent="globals/RiseView" pc="268436466" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="86" parent="globals/RiseView" pc="268436490" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="88" parent="globals/RiseView" pc="268436503" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="91" parent="globals/RiseView" pc="268436510" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="92" parent="globals/RiseView" pc="268436534" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="94" parent="globals/RiseView" pc="268436547" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="98" parent="globals/RiseView" pc="268436554" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="111" parent="globals/RiseView" pc="268436771" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="114" parent="globals/RiseView" pc="268436792" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseView.mc" id="20" lineNum="120" parent="globals/RiseView" pc="268436836" symbol="timerCallback"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" id="21" lineNum="14" parent="globals/Rez/Layouts" pc="268436883" symbol="MainLayout"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" id="21" lineNum="15" parent="globals/Rez/Layouts" pc="268436895" symbol="MainLayout"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" id="21" lineNum="16" parent="globals/Rez/Layouts" pc="268437000" symbol="MainLayout"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" id="21" lineNum="18" parent="globals/Rez/Layouts" pc="268437040" symbol="MainLayout"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" id="22" lineNum="23" parent="globals/Rez/Menus/MainMenu" pc="268437057" symbol="&lt;init&gt;"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" id="23" lineNum="24" parent="globals/Rez/Menus/MainMenu" pc="268437076" symbol="initialize"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" id="23" lineNum="25" parent="globals/Rez/Menus/MainMenu" pc="268437078" symbol="initialize"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" id="23" lineNum="26" parent="globals/Rez/Menus/MainMenu" pc="268437096" symbol="initialize"/>
+<entry filename="/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" id="23" lineNum="27" parent="globals/Rez/Menus/MainMenu" pc="268437152" symbol="initialize"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="10" object="true" symbol="RiseView"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="5" module="true" symbol="globals/Rez/Menus"/>
+<entry id="29" symbol="temp"/>
+<entry field="true" id="20" symbol="id_Rise"/>
+<entry id="21" method="true" symbol="MainLayout"/>
+<entry field="true" id="18" symbol="url"/>
+<entry field="true" id="16" symbol="timer"/>
+<entry field="true" id="8389605" symbol="accel"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="23" symbol="AppName"/>
+<entry field="true" id="8388963" symbol="altitude"/>
+<entry id="6" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8389594" symbol="headers"/>
+<entry id="8389345" symbol="rezId"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry field="true" id="8388964" symbol="pressure"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry id="9" object="true" symbol="RiseMenuDelegate"/>
+<entry field="true" id="26" symbol="prompt"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8" object="true" symbol="RiseDelegate"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="28" symbol="item_2"/>
+<entry id="27" symbol="item_1"/>
+<entry id="12" module="true" symbol="Menus"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+<entry field="true" id="8389606" symbol="mag"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry field="true" id="15" symbol="string_HR"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="22" object="true" symbol="MainMenu"/>
+<entry id="8389844" symbol="responseType"/>
+<entry id="8388786" method="true" symbol="method"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="14" method="true" symbol="onReceive"/>
+<entry id="17" method="true" symbol="timerCallback"/>
+<entry field="true" id="8388965" symbol="heading"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry field="true" id="19" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="8388643" module="true" symbol="Sensor"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="7" object="true" symbol="RiseApp"/>
+<entry field="true" id="8388960" symbol="heartRate"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8389109" method="true" symbol="onMenuItem"/>
+<entry id="8388646" module="true" object="true" symbol="Timer"/>
+<entry id="11" module="true" symbol="Layouts"/>
+<entry field="true" id="13" symbol="dataTimer"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry field="true" id="25" symbol="menu_label_2"/>
+<entry field="true" id="24" symbol="menu_label_1"/>
+<entry id="30" symbol="stress"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435692" name="item" stackId="1" startPc="268435620"/>
+<entry arg="true" endPc="268435882" name="dc" stackId="1" startPc="268435839"/>
+<entry arg="true" endPc="268436009" name="responseCode" stackId="1" startPc="268435948"/>
+<entry arg="true" endPc="268436009" name="data" stackId="2" startPc="268435948"/>
+<entry arg="true" endPc="268436032" name="dc" stackId="1" startPc="268436010"/>
+<entry endPc="268436881" name="sensorInfo" stackId="1" startPc="268436037"/>
+<entry endPc="268436881" name="xAccel" stackId="2" startPc="268436037"/>
+<entry endPc="268436881" name="yAccel" stackId="3" startPc="268436037"/>
+<entry endPc="268436881" name="hR" stackId="4" startPc="268436037"/>
+<entry endPc="268436881" name="altitude" stackId="5" startPc="268436037"/>
+<entry endPc="268436881" name="heading" stackId="6" startPc="268436037"/>
+<entry endPc="268436881" name="xMag" stackId="7" startPc="268436037"/>
+<entry endPc="268436881" name="yMag" stackId="8" startPc="268436037"/>
+<entry endPc="268436881" name="zMag" stackId="9" startPc="268436037"/>
+<entry endPc="268436881" name="pressure" stackId="10" startPc="268436037"/>
+<entry endPc="268436881" name="temp" stackId="11" startPc="268436037"/>
+<entry endPc="268436881" name="stress" stackId="12" startPc="268436037"/>
+<entry endPc="268436184" name="accel" stackId="13" startPc="268436155"/>
+<entry endPc="268436397" name="mag" stackId="14" startPc="268436358"/>
+<entry endPc="268436881" name="params" stackId="15" startPc="268436037"/>
+<entry endPc="268436881" name="headers" stackId="16" startPc="268436037"/>
+<entry endPc="268436881" name="options" stackId="17" startPc="268436037"/>
+<entry arg="true" endPc="268437056" name="dc" stackId="1" startPc="268436883"/>
+<entry endPc="268437056" name="rez_cmp_local_bitmap_id_Rise" stackId="2" startPc="268436895"/>
+</localVars>
+<deviceInfo deviceVersion="f63103773bbacb69c46724929741aca164ed02ef" partNumber="006-B3289-00"/>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_Rise"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="71" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/RiseMenuDelegate" offset="158" parentId="globals" symbolId="RiseMenuDelegate" type="class"/>
+<dataEntry label="globals/Rez" offset="213" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/RiseApp" offset="276" parentId="globals" symbolId="RiseApp" type="class"/>
+<dataEntry label="globals/RiseDelegate" offset="347" parentId="globals" symbolId="RiseDelegate" type="class"/>
+<dataEntry label="globals/RiseView" offset="394" parentId="globals" symbolId="RiseView" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="521" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="568" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="607" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="646" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/Menus/MainMenu" offset="709" parentId="Menus" symbolId="MainMenu" type="class"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435485" name="getApp" startPc="268435460">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435504" name="&lt;init&gt;" parent="RiseMenuDelegate" startPc="268435486">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435528" name="&lt;init&gt;" parent="Rez" startPc="268435505">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435547" name="&lt;init&gt;" parent="RiseApp" startPc="268435529">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435566" name="&lt;init&gt;" parent="RiseDelegate" startPc="268435548">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435619" name="&lt;init&gt;" parent="RiseView" startPc="268435567">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435692" name="onMenuItem" parent="RiseMenuDelegate" startPc="268435620">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435713" name="initialize" parent="RiseMenuDelegate" startPc="268435693">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435716" name="onStart" parent="RiseApp" startPc="268435714">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435793" name="getInitialView" parent="RiseApp" startPc="268435717">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435814" name="initialize" parent="RiseApp" startPc="268435794">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435817" name="onStop" parent="RiseApp" startPc="268435815">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435838" name="initialize" parent="RiseDelegate" startPc="268435818">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="RiseView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435882" name="onLayout" parent="RiseView" startPc="268435839">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435947" name="initialize" parent="RiseView" startPc="268435883">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="RiseView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436009" name="onReceive" parent="RiseView" startPc="268435948">
+<param id="responseCode"/>
+<param id="data"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436032" name="onUpdate" parent="RiseView" startPc="268436010">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436882" name="timerCallback" parent="RiseView" startPc="268436033">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437056" name="MainLayout" parent="Layouts" startPc="268436883">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437075" name="&lt;init&gt;" parent="MainMenu" startPc="268437057">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437208" name="initialize" parent="MainMenu" startPc="268437076">
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

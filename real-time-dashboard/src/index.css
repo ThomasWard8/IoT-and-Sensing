@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Adjust for dynamic height content */
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ffffff, #e3f2fd);
+    font-family: 'Inter', sans-serif;
+    color: #444;
+    overflow-x: hidden;
+}
+

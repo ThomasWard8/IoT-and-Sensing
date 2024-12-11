@@ -1,0 +1,45 @@
+{
+  "functions": [
+    {
+      "source": "alarm-system",
+      "codebase": "default"
+    },
+    {
+      "source": ".",
+      "codebase": "alarm-system",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    },
+    {
+      "source": "functions",
+      "codebase": "functions",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ],
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/alarmFunction",
+        "function": "checkAndTriggerAlarm",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

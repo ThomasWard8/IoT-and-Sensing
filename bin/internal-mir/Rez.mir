@@ -1,0 +1,1498 @@
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var id_Rise as ResourceId;
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 10; @position = 27; initialized = true; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 13; ]
+    module Layouts {
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 13; ]
+        <init> {
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 14; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_thomasward_Desktop_DE4_IoT_Rise_bin_gen_006_B3289_00_source_Rez_mcgen_14_74_19_8_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 15 12 ]
+            [ "_Users_thomasward_Desktop_DE4_IoT_Rise_bin_gen_006_B3289_00_source_Rez_mcgen_14_74_19_8_start" "_Users_thomasward_Desktop_DE4_IoT_Rise_bin_gen_006_B3289_00_source_Rez_mcgen_14_74_19_8_stop" ]
+            %rez_cmp_local_bitmap_id_Rise.1 = local;
+            %tmp.3 = getm $.Toybox.WatchUi;
+            %tmp.4 = getv function ? %tmp.3 :Bitmap;
+            %tmp.5 = newd 4;
+            %tmp.7 = const :identifier;
+            %tmp.8 = "id_Rise";
+            %tmp.9 = dup %tmp.5;
+            %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+            %tmp.12 = const :rezId;
+            %tmp.13 = getm $;
+            %tmp.14 = getv %tmp.13 :Rez;
+            %tmp.15 = getv %tmp.14 :Drawables;
+            %tmp.16 = getv %tmp.15 :id_Rise;
+            %tmp.17 = dup %tmp.10;
+            %tmp.18 = aputv %tmp.17 %tmp.12 %tmp.16;
+            %tmp.20 = const :locX;
+            %tmp.21 = getm $.Toybox.WatchUi;
+            %tmp.22 = getv %tmp.21 :LAYOUT_HALIGN_CENTER;
+            %tmp.23 = dup %tmp.18;
+            %tmp.24 = aputv %tmp.23 %tmp.20 %tmp.22;
+            %tmp.26 = const :locY;
+            %tmp.27 = 30;
+            %tmp.28 = dup %tmp.24;
+            %tmp.29 = aputv %tmp.28 %tmp.26 %tmp.27;
+            %tmp.1 = newc %tmp.4 (%tmp.29);
+            lputv %rez_cmp_local_bitmap_id_Rise.1 %tmp.1;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 16 12 ]
+            %tmp.30 = lgetv %rez_cmp_local_bitmap_id_Rise.1;
+            %tmp.31 = getv function %tmp.30 :setLocation;
+            %tmp.32 = 260;
+            %tmp.33 = lgetv %rez_cmp_local_bitmap_id_Rise.1;
+            %tmp.34 = getv %tmp.33 :width;
+            %tmp.35 = sub %tmp.32 %tmp.34;
+            %tmp.36 = 0.5;
+            %tmp.37 = mul %tmp.35 %tmp.36;
+            %tmp.38 = lgetv %rez_cmp_local_bitmap_id_Rise.1;
+            %tmp.39 = getv %tmp.38 :locY;
+            invoke %tmp.30 %tmp.31(%tmp.37, %tmp.39);
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 18 12 ]
+            %tmp.40 = newa 1 Array<WatchUi.Drawable>;
+            %tmp.42 = lgetv %rez_cmp_local_bitmap_id_Rise.1;
+            %tmp.43 = dup %tmp.40;
+            %tmp.44 = aputv %tmp.43 0 %tmp.42;
+            ret %tmp.44;
+_Users_thomasward_Desktop_DE4_IoT_Rise_bin_gen_006_B3289_00_source_Rez_mcgen_14_74_19_8_stop:
+        }
+    }
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 22; ]
+    module Menus {
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 22; ]
+        <init> {
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 23; ]
+        class MainMenu extends WatchUi.Menu{
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 23; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 23; ]
+            static
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 24; ]
+            function initialize() as Void {
+_Users_thomasward_Desktop_DE4_IoT_Rise_bin_gen_006_B3289_00_source_Rez_mcgen_24_34_28_12_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 25 16 ]
+                %tmp.2 = getv ? :Menu;
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 26 16 ]
+                %tmp.4 = self;
+                %tmp.5 = getv function %tmp.4 :addItem;
+                %tmp.6 = getm $.Toybox.WatchUi;
+                %tmp.7 = getv function %tmp.6 :loadResource;
+                %tmp.8 = getm $;
+                %tmp.9 = getv %tmp.8 :Rez;
+                %tmp.10 = getv %tmp.9 :Strings;
+                %tmp.11 = getv %tmp.10 :menu_label_1;
+                %tmp.12 = invoke %tmp.6 %tmp.7(%tmp.11);
+                %tmp.13 = as %tmp.12 String;
+                %tmp.15 = const :item_1;
+                invoke %tmp.4 %tmp.5(%tmp.13, %tmp.15);
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 27 16 ]
+                %tmp.16 = self;
+                %tmp.17 = getv function %tmp.16 :addItem;
+                %tmp.18 = getm $.Toybox.WatchUi;
+                %tmp.19 = getv function %tmp.18 :loadResource;
+                %tmp.20 = getm $;
+                %tmp.21 = getv %tmp.20 :Rez;
+                %tmp.22 = getv %tmp.21 :Strings;
+                %tmp.23 = getv %tmp.22 :menu_label_2;
+                %tmp.24 = invoke %tmp.18 %tmp.19(%tmp.23);
+                %tmp.25 = as %tmp.24 String;
+                %tmp.27 = const :item_2;
+                invoke %tmp.16 %tmp.17(%tmp.25, %tmp.27);
+_Users_thomasward_Desktop_DE4_IoT_Rise_bin_gen_006_B3289_00_source_Rez_mcgen_24_34_28_12_stop:
+            }
+        }
+    }
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 32; ]
+    module Strings {
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 32; ]
+        <init> {
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 33; @position = 27; initialized = true; ]
+        var menu_label_1 as ResourceId;
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 34; @position = 27; initialized = true; ]
+        var menu_label_2 as ResourceId;
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 35; @position = 27; initialized = true; ]
+        var prompt as ResourceId;
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 36; @position = 27; initialized = true; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 39; ]
+    module Styles {
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 39; ]
+        <init> {
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 40; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 40; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 41; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 44; ]
+        module system_size__menu_header {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 44; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 45; @position = 18; ]
+            const width as Number = 260;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 46; @position = 18; ]
+            const height as Number = 81;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 49; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 49; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 50; @position = 18; ]
+            const x as Number = 10;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 51; @position = 18; ]
+            const y as Number = 172;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 54; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 54; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 55; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 58; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 58; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 59; @position = 18; ]
+            const x as Number = 26;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 60; @position = 18; ]
+            const y as Number = 26;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 63; ]
+        module system_icon_dark__about {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 63; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 64; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_dark__about.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 65; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 66; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 67; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 70; ]
+        module system_icon_light__question {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 70; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 71; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_light__question.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 72; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 75; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 75; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 76; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 79; ]
+        module prompt_font__title {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 79; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 80 18 ]
+                %tmp.28 = getm $.Toybox.Graphics;
+                %tmp.29 = getv %tmp.28 :TEXT_JUSTIFY_CENTER;
+                %tmp.30 = getm $.Toybox.Graphics;
+                %tmp.31 = getv %tmp.30 :TEXT_JUSTIFY_VCENTER;
+                %tmp.32 = bitor %tmp.29 %tmp.31;
+                putv self :justification %tmp.32;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 81 18 ]
+                %tmp.33 = getm $.Toybox.Graphics;
+                %tmp.34 = getv %tmp.33 :FONT_XTINY;
+                putv self :font %tmp.34;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 80; @position = 18; ]
+            const justification;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 81; @position = 18; ]
+            const font;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 84; ]
+        module system_icon_dark__discard {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 84; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 85; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_dark__discard.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 86; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 87; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 88; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 91; ]
+        module system_size__menu_item {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 91; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 92; @position = 18; ]
+            const width as Number = 260;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 93; @position = 18; ]
+            const height as Number = 68;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 96; ]
+        module system_color_dark__text {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 96; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 98 18 ]
+                %tmp.35 = getm $.Toybox.Graphics;
+                %tmp.36 = getv %tmp.35 :COLOR_TRANSPARENT;
+                putv self :background %tmp.36;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 97; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 98; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 101; ]
+        module system_icon_destructive__discard {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 101; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 102; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_destructive__discard.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 103; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 106; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 106; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 107; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 108; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 111; ]
+        module prompt_size__title {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 111; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 112; @position = 18; ]
+            const width as Number = 208;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 113; @position = 18; ]
+            const height as Number = 39;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 116; ]
+        module confirmation_font__body {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 116; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 117 18 ]
+                %tmp.37 = getm $.Toybox.Graphics;
+                %tmp.38 = getv %tmp.37 :TEXT_JUSTIFY_CENTER;
+                %tmp.39 = getm $.Toybox.Graphics;
+                %tmp.40 = getv %tmp.39 :TEXT_JUSTIFY_VCENTER;
+                %tmp.41 = bitor %tmp.38 %tmp.40;
+                putv self :justification %tmp.41;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 118 18 ]
+                %tmp.42 = getm $.Toybox.Graphics;
+                %tmp.43 = getv %tmp.42 :FONT_TINY;
+                putv self :font %tmp.43;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 117; @position = 18; ]
+            const justification;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 118; @position = 18; ]
+            const font;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 121; ]
+        module system_color_dark__background {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 121; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 122; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 123; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 126; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 126; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 127; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_destructive__hint_button_left_top.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 128; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 131; ]
+        module system_size__launch_icon {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 131; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 132; @position = 18; ]
+            const scaleX as Number = 40;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 133; @position = 18; ]
+            const scaleY as Number = 40;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 134; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 137; ]
+        module confirmation_input__confirm {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 137; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 138 18 ]
+                %tmp.44 = getm $.Toybox.WatchUi;
+                %tmp.45 = getv %tmp.44 :KEY_ENTER;
+                putv self :button %tmp.45;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 138; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 141; ]
+        module prompt_font__body_with_title {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 141; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 142 18 ]
+                %tmp.46 = getm $.Toybox.Graphics;
+                %tmp.47 = getv %tmp.46 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.47;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 143 18 ]
+                %tmp.48 = getm $.Toybox.Graphics;
+                %tmp.49 = getv %tmp.48 :FONT_TINY;
+                putv self :font %tmp.49;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 142; @position = 18; ]
+            const justification;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 143; @position = 18; ]
+            const font;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 146; ]
+        module confirmation_loc__body {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 146; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 147; @position = 18; ]
+            const x as Number = 52;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 148; @position = 18; ]
+            const y as Number = 52;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 151; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 151; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 152; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_destructive__hint_button_left_bottom.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 153; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 156; ]
+        module prompt_color_dark__background {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 156; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 157; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 158; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 161; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 161; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 162; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 163; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 166; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 166; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 167; @position = 18; ]
+            const x as Number = 225;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 168; @position = 18; ]
+            const y as Number = 48;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 171; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 171; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 172; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 173; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 176; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 176; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 177; @position = 18; ]
+            const x as Number = 3;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 178; @position = 18; ]
+            const y as Number = 108;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 181; ]
+        module prompt_size__body_no_title {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 181; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 182; @position = 18; ]
+            const width as Number = 208;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 183; @position = 18; ]
+            const height as Number = 208;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 186; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 186; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 187; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_light__hint_button_left_top.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 188; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 191; ]
+        module prompt_color_light__background {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 191; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 192; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 193; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 196; ]
+        module confirmation_input__delete {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 196; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 197 18 ]
+                %tmp.50 = getm $.Toybox.WatchUi;
+                %tmp.51 = getv %tmp.50 :KEY_ENTER;
+                putv self :button %tmp.51;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 197; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 200; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 200; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 201; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_dark__hint_button_left_top.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 202; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 205; ]
+        module system_input__action_menu {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 205; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 206 18 ]
+                %tmp.52 = getm $.Toybox.WatchUi;
+                %tmp.53 = getv %tmp.52 :KEY_ENTER;
+                putv self :button %tmp.53;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 206; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 209; ]
+        module system_icon_light__save {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 209; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 210; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_light__save.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 211; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 214; ]
+        module prompt_color_light__body {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 214; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 216 18 ]
+                %tmp.54 = getm $.Toybox.Graphics;
+                %tmp.55 = getv %tmp.54 :COLOR_TRANSPARENT;
+                putv self :background %tmp.55;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 215; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 216; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 219; ]
+        module system_loc__subwindow {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 219; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 220; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 223; ]
+        module system_icon_light__warning {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 223; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 224; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_light__warning.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 225; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 228; ]
+        module confirmation_color_light__body {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 228; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 230 18 ]
+                %tmp.56 = getm $.Toybox.Graphics;
+                %tmp.57 = getv %tmp.56 :COLOR_TRANSPARENT;
+                putv self :background %tmp.57;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 229; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 230; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 233; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 233; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 234; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 235; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 238; ]
+        module activity_color_light__background {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 238; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 239; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 240; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 243; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 243; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 244; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 245; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 248; ]
+        module system_size__screen {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 248; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 249; @position = 18; ]
+            const width as Number = 260;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 250; @position = 18; ]
+            const height as Number = 260;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 253; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 253; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 254; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_destructive__hint_button_right_bottom.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 255; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 258; ]
+        module system_color_light__background {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 258; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 259; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 260; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 263; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 263; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 264; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 265; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 268; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 268; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 269; @position = 18; ]
+            const x as Number = 210;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 270; @position = 18; ]
+            const y as Number = 48;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 273; ]
+        module activity_color_dark__text {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 273; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 275 18 ]
+                %tmp.58 = getm $.Toybox.Graphics;
+                %tmp.59 = getv %tmp.58 :COLOR_TRANSPARENT;
+                putv self :background %tmp.59;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 274; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 275; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 278; ]
+        module confirmation_input__keep {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 278; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 279 18 ]
+                %tmp.60 = getm $.Toybox.WatchUi;
+                %tmp.61 = getv %tmp.60 :KEY_DOWN;
+                putv self :button %tmp.61;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 279; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 282; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 282; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 283; @position = 18; ]
+            const x as Number = 26;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 284; @position = 18; ]
+            const y as Number = 78;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 287; ]
+        module system_icon_dark__search {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 287; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 288; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_dark__search.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 289; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 290; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 291; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 294; ]
+        module activity_color_light__text {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 294; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 296 18 ]
+                %tmp.62 = getm $.Toybox.Graphics;
+                %tmp.63 = getv %tmp.62 :COLOR_TRANSPARENT;
+                putv self :background %tmp.63;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 295; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 296; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 299; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 299; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 300; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 301; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 304; ]
+        module system_icon_dark__save {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 304; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 305; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_dark__save.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 306; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 307; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 308; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 311; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 311; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 312; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_destructive__hint_button_left_middle.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 313; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 316; ]
+        module system_icon_light__search {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 316; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 317; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_light__search.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 318; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 321; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 321; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 322; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_dark__hint_button_left_bottom.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 323; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 326; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 326; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 327; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_positive_hint_button_left_top.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 328; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 331; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 331; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 332; @position = 18; ]
+            const x as Number = 225;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 333; @position = 18; ]
+            const y as Number = 172;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 336; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 336; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 337; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 338; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 341; ]
+        module confirmation_color_dark__body {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 341; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 343 18 ]
+                %tmp.64 = getm $.Toybox.Graphics;
+                %tmp.65 = getv %tmp.64 :COLOR_TRANSPARENT;
+                putv self :background %tmp.65;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 342; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 343; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 346; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 346; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 347; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 348; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 351; ]
+        module prompt_color_dark__title {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 351; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 353 18 ]
+                %tmp.66 = getm $.Toybox.Graphics;
+                %tmp.67 = getv %tmp.66 :COLOR_TRANSPARENT;
+                putv self :background %tmp.67;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 352; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 353; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 356; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 356; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 357; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_destructive__cancel.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 358; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 361; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 361; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 362; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 363; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 366; ]
+        module prompt_loc__title {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 366; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 367; @position = 18; ]
+            const x as Number = 26;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 368; @position = 18; ]
+            const y as Number = 19;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 371; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 371; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 372; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 375; ]
+        module prompt_color_light__title {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 375; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 377 18 ]
+                %tmp.68 = getm $.Toybox.Graphics;
+                %tmp.69 = getv %tmp.68 :COLOR_TRANSPARENT;
+                putv self :background %tmp.69;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 376; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 377; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 380; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 380; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 381; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 382; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 385; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 385; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 386; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_dark__hint_button_left_middle.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 387; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 390; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 390; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 391; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 392; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 395; ]
+        module system_icon_light__cancel {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 395; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 396; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_light__cancel.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 397; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 400; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 400; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 401; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 402; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 405; ]
+        module system_icon_light__about {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 405; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 406; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_light__about.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 407; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 410; ]
+        module system_size__toast_icon {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 410; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 411; @position = 18; ]
+            const scaleX as Number = 40;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 412; @position = 18; ]
+            const scaleY as Number = 40;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 413; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 416; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 416; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 417; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 420; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 420; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 421; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 422; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 425; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 425; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 426; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 427; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 430; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 430; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 431; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 434; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 434; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 435; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 438; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 438; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 439; @position = 18; ]
+            const x as Number = 10;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 440; @position = 18; ]
+            const y as Number = 172;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 441; @position = 18; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 444; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 444; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 445; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 446; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 449; ]
+        module activity_color_dark__background {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 449; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 450; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 451; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 454; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 454; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 455; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_light__hint_button_left_bottom.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 456; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 459; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 459; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 460; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_positive__hint_button_left_middle.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 461; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 464; ]
+        module system_size__menu_icon {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 464; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 465; @position = 18; ]
+            const scaleX as Number = 40;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 466; @position = 18; ]
+            const scaleY as Number = 40;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 467; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 470; ]
+        module system_icon_destructive__warning {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 470; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 471; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_destructive__warning.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 472; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 475; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 475; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 476; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 479; ]
+        module system_icon_dark__cancel {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 479; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 480; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_dark__cancel.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 481; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 482; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 483; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 486; ]
+        module prompt_size__body_with_title {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 486; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 487; @position = 18; ]
+            const width as Number = 208;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 488; @position = 18; ]
+            const height as Number = 156;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 491; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 491; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 492; @position = 18; ]
+            const x as Number = 225;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 493; @position = 18; ]
+            const y as Number = 48;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 496; ]
+        module system_color_light__text {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 496; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 498 18 ]
+                %tmp.70 = getm $.Toybox.Graphics;
+                %tmp.71 = getv %tmp.70 :COLOR_TRANSPARENT;
+                putv self :background %tmp.71;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 497; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 498; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 501; ]
+        module system_icon_light__check {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 501; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 502; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_light__check.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 503; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 506; ]
+        module confirmation_input__reject {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 506; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 507 18 ]
+                %tmp.72 = getm $.Toybox.WatchUi;
+                %tmp.73 = getv %tmp.72 :KEY_DOWN;
+                putv self :button %tmp.73;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 507; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 510; ]
+        module system_icon_light__revert {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 510; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 511; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_light__revert.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 512; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 515; ]
+        module system_size__subwindow {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 515; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 516; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 519; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 519; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 520; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_positive__hint_button_left_bottom.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 521; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 524; ]
+        module system_icon_dark__check {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 524; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 525; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_dark__check.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 526; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 527; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 528; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 531; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 531; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 532; @position = 18; ]
+            const x as Number = 10;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 533; @position = 18; ]
+            const y as Number = 172;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 534; @position = 18; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 537; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 537; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 538; @position = 18; ]
+            const x as Number = 210;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 539; @position = 18; ]
+            const y as Number = 48;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 542; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 542; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 543; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 544; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 547; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 547; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 548; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 551; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 551; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 552; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_light__hint_button_left_middle.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 553; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 556; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 556; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 557; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 558; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 561; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 561; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 562; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 563; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 566; ]
+        module system_icon_dark__revert {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 566; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 567; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_dark__revert.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 568; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 569; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 570; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 573; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 573; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 574; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 575; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 578; ]
+        module system_icon_dark__question {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 578; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 579; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_dark__question.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 580; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 581; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 582; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 585; ]
+        module system_icon_light__discard {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 585; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 586; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_light__discard.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 587; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 590; ]
+        module device_info {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 590; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 592 18 ]
+                %tmp.74 = getm $.Toybox.System;
+                %tmp.75 = getv %tmp.74 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.75;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 591; @position = 18; ]
+            const screenWidth as Number = 260;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 592; @position = 18; ]
+            const screenShape;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 593; @position = 18; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 594; @position = 18; ]
+            const hasGpu as Boolean = false;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 595; @position = 18; ]
+            const screenHeight as Number = 260;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 596; @position = 18; ]
+            const hasTouchScreen as Boolean = false;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 597; @position = 18; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 600; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 600; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 601; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 602; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 605; ]
+        module prompt_font__body_no_title {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 605; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 606 18 ]
+                %tmp.76 = getm $.Toybox.Graphics;
+                %tmp.77 = getv %tmp.76 :TEXT_JUSTIFY_CENTER;
+                %tmp.78 = getm $.Toybox.Graphics;
+                %tmp.79 = getv %tmp.78 :TEXT_JUSTIFY_VCENTER;
+                %tmp.80 = bitor %tmp.77 %tmp.79;
+                putv self :justification %tmp.80;
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 607 18 ]
+                %tmp.81 = getm $.Toybox.Graphics;
+                %tmp.82 = getv %tmp.81 :FONT_TINY;
+                putv self :font %tmp.82;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 606; @position = 18; ]
+            const justification;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 607; @position = 18; ]
+            const font;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 610; ]
+        module prompt_size__title_icon {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 610; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 611; @position = 18; ]
+            const scaleX as Float = 0.15;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 612; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 615; ]
+        module system_icon_dark__warning {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 615; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 616; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_dark__warning.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 617; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 618; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 619; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 622; ]
+        module prompt_loc__title_icon {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 622; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 623; @position = 18; ]
+            const x as Number = 130;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 624; @position = 18; ]
+            const y as Number = 39;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 625; @position = 18; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 626; @position = 18; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 629; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 629; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 630; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 633; ]
+        module prompt_color_dark__body {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 633; ]
+            <init> {
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen" 635 18 ]
+                %tmp.83 = getm $.Toybox.Graphics;
+                %tmp.84 = getv %tmp.83 :COLOR_TRANSPARENT;
+                putv self :background %tmp.84;
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 634; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 635; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 638; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 638; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 639; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 640; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 643; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 643; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 644; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 645; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 648; ]
+        module confirmation_size__body {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 648; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 649; @position = 18; ]
+            const width as Number = 156;
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 650; @position = 18; ]
+            const height as Number = 156;
+        }
+        [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 653; ]
+        module system_icon_positive__check {
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 653; ]
+            <init> {
+            }
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 654; @position = 18; ]
+            const filename as String = "/Users/thomasward/Library/Application Support/Garmin/ConnectIQ/Devices/fenix6/system_icon_positive__check.svg";
+            [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 655; @position = 18; ]
+            const dithering as String = "none";
+        }
+    }
+}
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/bin/gen/006-B3289-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}

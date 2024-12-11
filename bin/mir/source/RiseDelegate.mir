@@ -1,0 +1,26 @@
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseDelegate.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseDelegate.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseDelegate.mc"; @line = 4; ]
+class RiseDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseDelegate.mc"; @line = 6; ]
+    function initialize() as Void {
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseDelegate_mc_6_26_8_4_start:
+[ "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseDelegate.mc" 7 8 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_thomasward_Desktop_DE4_IoT_Rise_source_RiseDelegate_mc_6_26_8_4_stop:
+    }
+}
+[ @file = "/Users/thomasward/Desktop/DE4/IoT/Rise/source/RiseDelegate.mc"; @line = 1; ]
+<init> {
+}

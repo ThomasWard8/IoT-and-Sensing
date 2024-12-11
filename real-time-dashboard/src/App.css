@@ -1,0 +1,107 @@
+/* App.css */
+
+/* Ensure body and root containers fill the screen */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* App container setup */
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+
+
+
+.App-title {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+
+
+.chart-container {
+    flex: 1 1 45%; /* Allows two charts per row on larger screens */
+    max-width: 900px; /* Limit the size */
+}
+
+
+
+/* Header: Center text */
+/* Header Styling */
+.App-header {
+    width: 100%;
+    background-color: #2C3E50; /* Use one of the colors above */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Main: Allow content to fill available space */
+.App-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+.link-button {
+    display: inline-block; /* Ensures it behaves like a button */
+    padding: 10px 20px; /* Add padding for a button-like appearance */
+    margin: 10px; /* Space between buttons */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    color: white; /* Text color */
+    background-color: #2C3E50; /* Button background (professional blue) */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    text-align: center; /* Center the text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.link-button:hover {
+    background-color: #1d2936; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.link-button:active {
+    background-color: #17212c; /* Even darker blue when active */
+    transform: translateY(0); /* Reset lift effect */
+}
+
+.link-container {
+    display: flex; /* Flex layout for buttons */
+    justify-content: center; /* Center the buttons */
+    gap: 20px; /* Space between buttons */
+    padding: 20px; /* Add spacing around the buttons */
+}
+
+
+/* Responsive scaling */
+@media (max-width: 568px) {
+    .App-title {
+        font-size: 2em;
+    }
+
+    .nav-link {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
